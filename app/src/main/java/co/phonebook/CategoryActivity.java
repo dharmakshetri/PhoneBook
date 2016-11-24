@@ -202,7 +202,6 @@ public class CategoryActivity extends Activity implements OnItemClickListener {
 		TextView tvCategory = (TextView) view.findViewById(R.id.category_name);
 		tvCategory.setText(category.getCatName());
 		category.saveEventually();
-		
 		// Send single item click data to SingleItemView Class
 		Intent i = new Intent(CategoryActivity.this,PhoneNameActivity.class);
 		// Pass data "name" followed by the position
