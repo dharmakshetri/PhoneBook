@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Phone Book</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Phone Book</string>
+    <string name="namelabel">"Name : "</string>
+    <string name="add_your_number"> If you want to add your number Click Here and Add your Number! </string>
+    <string name="add_your"> Add your Number </string>
+    <string name="name_of_represenation">Name of Representation </string>
+    <string name="landline_number">Phone Number</string>
+    <string name="mobile_number">Mobile Numbers</string>
+    <string name="adddress">Address</string>
+    <string name="category">Category</string>
+    <string name="send">Send</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="call">Call</string>
+    <string name="save">Save</string>
+    <string name="enter_number_for_call">Enter Number For Call</string>
+    <string name="toll_free_number">Toll Free Number:</string>
+    <string name="phone_no">Pnone Numbers</string>
+    <string name="very_imp_number">Very Important Number</string>
+    <string name="select_category">Select Category</string>
+    <string name="add_your_number_top">Enter all data carefully submit your information.</string>
+    <string name="info_landline_message">Add more then one number then, separate by comma(eg. 15222222, 12333333)->Limit: 5 Numbers</string>
+    <string name="info_mobile_message">Add more then one number then, separate by comma(eg. 9841010101, 9851440055)->Limit: 3 Numbers</string>
+    <string name="text_top_call">Type Your Number For Call</string>
+    <string name="hint_type_call">15202600</string>
+    <string name="info_about_app"> Nepali Phone Book is freely available app for all user.In this app phone number is collected various websites and organizations.</string>
+    <string name="developed_by">Developed By</string>
+    <string name="dharma_kshetri">Dharma Kshetri "HorrorGoogle"</string>
+    <string name="dharma_mobile_number">+97798419017700 </string>
+    <string name="dharma_web_address">http://www.prandroid.com</string>
+    
+    <string name="very_very_imp"> Very Very Important Numbers</string>
+    <string name="about_app_text"> About App</string>
+    <string name="phone_number_hint">14231992</string>
+    <string name="mobile_number_hint">9851000001</string>
+    <string name="country_code">+977</string>
+</resources>

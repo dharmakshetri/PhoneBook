@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@color/npbappcolor"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/top_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_your_number_top"
+        android:textStyle="bold" />
+
+    <ScrollView
+            android:id="@+id/scolls"
+            android:layout_width="fill_parent" android:layout_below="@+id/top_message"
+            android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:id="@+id/relTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <LinearLayout
+            android:id="@+id/linear_name_of_representation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_represenation" />
+
+            <EditText
+                android:id="@+id/et_name_of_represenation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" android:layout_marginLeft="5dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/linear_name_of_representation"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/linear_landline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider1"
+            android:layout_margin="10sp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_landline_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/landline_number" />
+
+            <EditText
+                android:id="@+id/et_landline_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/phone_number_hint" android:layout_marginLeft="5dp"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info_landline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_landline"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp" android:textColor="@color/blue"
+            android:text="@string/info_landline_message"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/info_landline"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/linear_mobile_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider2"
+            android:layout_margin="10sp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number" />
+
+            <EditText
+                android:id="@+id/et_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/mobile_number_hint" android:layout_marginLeft="5dp"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_mobile_number"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp" android:textColor="@color/blue"
+            android:text="@string/info_mobile_message"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/info_mobile"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/linear_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider3"
+            android:layout_margin="10sp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adddress" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" android:layout_marginLeft="5dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/linear_address"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/linear_category"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_address"
+            android:layout_margin="10sp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category" />
+
+            <Spinner
+                android:id="@+id/spin_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                android:prompt="@string/select_category" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="80dp" android:background="@drawable/button_shape"
+        android:layout_height="40dp"
+        android:layout_below="@+id/scolls"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/save" />
+
+</RelativeLayout>

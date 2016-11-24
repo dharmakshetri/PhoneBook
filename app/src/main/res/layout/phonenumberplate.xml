@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!--
+         <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/namelabel"
+        android:textSize="25sp" />    -->
+
+    <TextView
+        android:id="@+id/name_of_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/address_of_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_of_phone"
+        android:textSize="25sp" />
+
+    	<TextView
+        android:id="@+id/numbers_of_phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/address_of_phone"
+        android:textSize="25sp" />
+  	<TextView
+        android:id="@+id/numbers_of_phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/numbers_of_phone1"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/numbers_of_phone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/numbers_of_phone2"
+        android:textSize="25sp" /> 
+         <TextView
+        android:id="@+id/numbers_of_phone4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/numbers_of_phone3"
+        android:textSize="25sp" />
+          <TextView
+        android:id="@+id/numbers_of_phone5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/numbers_of_phone4"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/mobile_of_phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/numbers_of_phone5"
+        android:textSize="25sp" />
+     <TextView
+        android:id="@+id/mobile_of_phone2"
+        android:layout_width="wrap_content" android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_of_phone1"
+        android:textSize="25sp" />
+      <TextView
+        android:id="@+id/mobile_of_phone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/mobile_of_phone2"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/add_your_number_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/add_your_number"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

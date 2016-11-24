@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30sp"
+            android:background="@drawable/category_profile_32" />
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/category_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60sp"
+            android:text="Banks"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/cat_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/category_image"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/category_name"
+            android:layout_marginLeft="60sp" android:textSize="8sp"
+            android:text="25 numbers" />
+
+        <TextView
+            android:id="@+id/cat_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30sp"
+            android:text="10 numbers"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
