@@ -85,9 +85,9 @@ public class MainActivity extends Activity {
 			// Create a progressdialog
 			mProgressDialog = new ProgressDialog(MainActivity.this);
 			// Set progressdialog title
-			mProgressDialog.setTitle("Nepali Phone Book");
+			mProgressDialog.setTitle("Phone Book");
 			// Set progressdialog message
-			mProgressDialog.setMessage("Loading...");
+			mProgressDialog.setMessage("Loading Numbers...");
 			mProgressDialog.setIndeterminate(false);
 			// Show progressdialog
 			mProgressDialog.show();
@@ -101,10 +101,10 @@ public class MainActivity extends Activity {
 			query.orderByAscending("phone_name");
 			query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
 			query.findInBackground(new FindCallback<ParseObject>() {
-			public void done(List<ParseObject> scoreList, ParseException e) {
-			  if (scoreList!= null) {
+			public void done(List<ParseObject> numberList, ParseException e) {
+			  if (numberList!= null) {
 				  //ob = query.find();
-				loaddata(scoreList);
+				loaddata(numberList);
 				  
 			    // Results were successfully found, looking first on the
 			    // network and then on disk.
@@ -127,7 +127,7 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	public void loaddata(List<ParseObject> scoreList) {
+	public void loaddata(List<ParseObject> numberList) {
 
 		// Locate the listview in listview_main.xml
 		listview = (ListView) findViewById(R.id.listview);
@@ -135,6 +135,8 @@ public class MainActivity extends Activity {
 		adapter = new ArrayAdapter<String>(MainActivity.this,
 				R.layout.listview_item);
 		// Retrieve object "name" from Parse.com database
+//		Log.e("LIST","Number List="+numberList.size());
+		Log.e("LIST","ob List="+ob.size());
 		for (ParseObject number : ob) {
 			adapter.add((String) number.get("category_name"));
 		}

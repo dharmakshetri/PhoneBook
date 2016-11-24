@@ -68,7 +68,7 @@ public class CategoryActivity extends Activity implements OnItemClickListener {
 				// Create a progressdialog
 				mProgressDialog = new ProgressDialog(CategoryActivity.this);
 				// Set progressdialog title
-				mProgressDialog.setTitle("Nepali Phone Book");
+				mProgressDialog.setTitle("Phone Book");
 				// Set progressdialog message
 				mProgressDialog.setMessage("Loading...");
 				mProgressDialog.setIndeterminate(false);
@@ -97,11 +97,13 @@ public class CategoryActivity extends Activity implements OnItemClickListener {
 		try {
 			ob = query.find();
 			for (ParseObject name : ob) {
-				//Log.d("TAG", "Cat Name add--"+(String) name.get("category_name") +" ID="+name.getInt("cat_id"));
-				if(!((String) name.get("category_name")==null || name.get("category_name").equals("null")))
-				c.setCatName((String) name.get("category_name"));
-				c.setCatId(name.getInt("cat_id"));
-				c.saveEventually();
+				Log.d("TAG", "Cat Name add--"+(String) name.get("category_name") +" ID="+name.getInt("cat_id"));
+				if(!((String) name.get("category_name")==null || name.get("category_name").equals("null"))) {
+					Log.d("TAG", "IF Cat NAME--"+(String) name.get("category_name"));
+					c.setCatName((String) name.get("category_name"));
+					c.setCatId(name.getInt("cat_id"));
+					c.saveEventually();
+				}
 			}
 		} catch (ParseException e1) {
 			// TODO Auto-generated catch block
@@ -158,7 +160,7 @@ public class CategoryActivity extends Activity implements OnItemClickListener {
 					//mAdapter.clear();
 					for (int i = 0; i < tasks.size(); i++) {
 						PhoneBook.category.add(tasks.get(i).getCatName());
-						Log.e(ACCOUNT_SERVICE, "Cat ID=="+tasks.get(i).getCatId());
+						//Log.e(ACCOUNT_SERVICE, "Cat ID=="+tasks.get(i).getCatId());
 						
 						// Counting number of phone number for respevice category
 						final PhoneName pn= new PhoneName();
@@ -168,7 +170,7 @@ public class CategoryActivity extends Activity implements OnItemClickListener {
 						try {
 							ob = query_phone_number_count.find();
 							int size=ob.size();
-							Log.e(ACCOUNT_SERVICE, "Cat ID=="+tasks.get(i).getCatId()+"  size=="+size);
+							//Log.e(ACCOUNT_SERVICE, "Cat ID=="+tasks.get(i).getCatId()+"  size=="+size);
 							PhoneBook.category_count.add(String.valueOf(size));
 						} catch (ParseException e1) {
 							// TODO Auto-generated catch block
