@@ -16,3 +16,9 @@ Parse Server works with the Express web application framework. It can be added t
 ![2](http://i.imgur.com/EPDPjzM.png)
 ![3](http://i.imgur.com/ysEsMpg.png)
 ![4](http://i.imgur.com/yXrImRR.png)
+
+###About Me
+
+I am an android engineer, currently located in Fremont, CA.
+
+If you have any idea and wann chat with me, please visit my blog [PrAndroid](http://www.prandroid.com) and [CodingWorkspace](http://www.codingworkspace.com). More about me please visit my personal website:[DHARMAKSHETRI.COM.NP](http://dharmakshetri.com.np/).
