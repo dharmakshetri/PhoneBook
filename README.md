@@ -5,7 +5,7 @@ PhoneBook Directory Android application
 PhoneBook is the collection phone numbers with respective different categories, and data will stored using the [open source Parse](https://github.com/ParsePlatform/parse-server) backend.
 
 #How to contribute PhoneBook?
-`$ git clone https://github.com/dharmakshetri/PhoneBook`
+`$ git clone https://github.com/dharmakshetri/PhoneBook.git`
 
 #What is Parse?
 [Parse Server](https://github.com/ParsePlatform/parse-server) is an open source version of the Parse backend that can be deployed to any infrastructure that can run Node.js.
