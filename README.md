@@ -1,4 +1,4 @@
-## PhoneBook ![PhoneBook](http://i.imgur.com/VuCTRVj.png)
+## PhoneBook ![PhoneBook]<img src="http://i.imgur.com/VuCTRVj.png" width="20" height="20">
 PhoneBook Directory Android application
 
 ### What is PhoneBook?
